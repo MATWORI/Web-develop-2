@@ -1,0 +1,26 @@
+<head>
+    <meta charset = "UTF-8">
+</head>
+
+<script>
+
+
+
+st = prompt('Введите слово:')
+n = st.length;
+letter = prompt('Введите букву')
+count = 0;
+for( i = 0; i < n; i++){
+    letter2 = st.charAt(i)
+    if (letter2 == letter){
+        count += 1
+    }
+}
+if (count > 0){
+    alert('Буква ' + letter +' повторяется '+ count + ' раз')
+}
+else{
+    alert('Нет этой буквы в слове')
+    }
+
+</script>

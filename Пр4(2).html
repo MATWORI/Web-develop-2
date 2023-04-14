@@ -1,0 +1,24 @@
+<body>
+<script>
+
+arr = new Array(10);
+s = '';
+for (i = 0; i < arr.length; i++){
+    y = Math.random()*(10) - 5 ;
+    arr[i] = Math.floor(y)
+    s = s +' '+arr[i];
+}
+max = arr[1]
+index = 0
+for (i = 0; i < arr.length; i++){
+    
+    if ((arr[i] > max) && (arr[i] < 0)) {
+        max = arr[i]
+        index = i + 1
+    }
+
+}
+alert(s)
+alert('Самое наибольшее отрицательное число в последовательности   '+ max +'     Его индекс  '+ index);
+</script>
+</body>

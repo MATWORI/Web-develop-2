@@ -1,0 +1,24 @@
+<head>
+    <meta charset = "UTF-8">
+</head>
+<body>
+<script>
+
+
+mn = new Array('ян','фев','мар','ап','май','июнь','июль','авг','сен','окт','ноя','дек');
+dn = new Array('пн','вт','ср','чт','пт','сб','вс');
+
+td = new Date()
+g = td.getFullYear();
+m = td.getMonth()
+d = td.getDay()
+ch = td.getDate()
+td1 = new Date(g,m,ch+1);
+g = td1.getFullYear();
+m = td1.getMonth()
+d = td1.getDay()
+ch = td1.getDate()
+
+alert(ch + ' ' + mn[m] + ' ' + g + ' года ' + dn[d + 1])
+</script>
+</body>
